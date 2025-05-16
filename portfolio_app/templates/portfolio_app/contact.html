@@ -1,0 +1,58 @@
+{% extends "portfolio_app/base.html" %}
+{% load static %}
+
+{% block content1 %}
+<section class="container py-5">
+  <h2 class="text-center mb-4 text-primary fw-bold animate__animated animate__fadeInDown">Contact Me</h2>
+
+  <div class="row g-5">
+    <!-- Contact Info -->
+    <div class="col-md-6 animate__animated animate__fadeInLeft">
+      <h4 class="mb-3">Let's connect</h4>
+      <p>You can reach out to me via email or on social platforms:</p>
+
+      <ul class="list-unstyled">
+        <li class="mb-2">
+          <i class="bi bi-envelope-fill text-danger me-2"></i>
+          <a href="mailto:youremail@example.com" class="text-decoration-none text-light">youremail@example.com</a>
+        </li>
+        <li class="mb-2">
+          <i class="bi bi-linkedin text-primary me-2"></i>
+          <a href="https://linkedin.com/in/yourprofile" class="text-decoration-none text-light" target="_blank">LinkedIn</a>
+        </li>
+        <li class="mb-2">
+          <i class="bi bi-github  me-2"></i>
+          <a href="https://github.com/yourusername" class="text-decoration-none text-light" target="_blank">GitHub</a>
+        </li>
+        <li class="mb-2">
+          <i class="bi bi-twitter-x  me-2"></i>
+          <a href="https://twitter.com/yourusername" class="text-decoration-none text-light" target="_blank">Twitter</a>
+        </li>
+        <li class="mb-2">
+          <i class="bi bi-instagram text-danger me-2"></i>
+          <a href="https://instagram.com/yourusername" class="text-decoration-none text-light" target="_blank">Instagram</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="col-md-6 animate__animated animate__fadeInRight">
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary px-4">Send</button>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock content1 %}

@@ -1,0 +1,312 @@
+/* body {} */
+/* background-color: rgb(20,0,30); */
+
+/* background-color: rgb(20, 0, 30) !important;  */
+
+
+/* } */
+
+body {
+    padding-top: 70px;
+    /* Adjust based on your navbar height */
+    font-family: 'Roboto', sans-serif;
+    /* or any preferred font */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Full-screen background video */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.3);
+    /* Optional: darken for contrast */
+}
+
+/* Content above the video */
+.main-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    /* Optional: ensure text is visible */
+}
+
+
+
+
+.navbar-nav .nav-link:hover {
+    font-weight: bold;
+    color: #4fffb0;
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.navbar-dark {
+    /* background-color: rgb(14,1,46) */
+    background-color: transparent;
+    /* background-color:rgba(20, 0, 30, 0.9); */
+    z-index: 2;
+}
+
+.navbar {
+    /* position: relative; */
+    /* z-index: 2;  Ensures navbar is above the video (z-index: -1) */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    /* Higher than video and content */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.circular-image-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #ccc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-image {
+    width: 120%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* profile */
+.title {
+    color: #4fffb0;
+}
+
+.name {
+    color: #fff;
+}
+
+/* icons */
+.social-icon i {
+    transition: color 0.3s, transform 0.3s;
+
+    /* font-size: 1.5rem; or use your fs-4 class */
+}
+
+.social-icon.linkedin i {
+    color: #0e76a8
+}
+
+.social-icon.github i {
+    color: #ffffff
+}
+
+.social-icon.twitter i {
+    color: #1da1f2
+}
+
+.social-icon.gmail i {
+    color: #ea4335
+}
+
+.social-icon.instagram i {
+    color: #e1306c
+}
+
+/* Add for Instagram */
+
+.social-icon:hover i {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .circular-image-container {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+/* about page */
+
+/* .about_image {
+    width:200px;
+    height: auto;
+    display:block;
+    margin:auto;
+} */
+
+/* General Styles for About Page */
+.about_image {
+    width: 250px;
+    height: 350px;
+    
+    object-fit:cover;
+    margin:auto;
+     overflow: hidden;
+    border: 2px solid #ccc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.title {
+    color: #4fffb0;
+    text-align: center;
+    padding: 18px;
+}
+
+.sub-title {
+    color: #4fffb0;
+    font-size: 2rem;
+    /* margin: 30px; */
+    padding:20px;
+    text-align: center;
+    font-weight: 400;  
+}
+
+.skills-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-list li {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+/* Tech Stack Section */
+.tech-stack-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin-top: 20px; */
+    gap: 20px;
+}
+
+.tech-icon {
+    text-align: center;
+    margin: 20px;
+}
+
+.tech-icon-img {
+    width: 60px;
+    /* Adjust based on icon size */
+    height: 60px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech-name {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Hover effect for icons */
+.tech-icon-img:hover {
+    transform: scale(1.1);
+    /* Make icons slightly larger on hover */
+}
+
+
+
+/* Optional: Add animation to icons */
+/* @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tech-icon {
+  animation: fadeInUp 0.5s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+} */
+
+
+/* Projects.html Section */
+
+/* view_ProjectButton */
+.hitech-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #00ffea;
+    background-color: transparent;
+    border: 1px solid #00ffea;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px #00ffea, 0 0 40px #00ffea;
+    text-decoration: none;
+    border-radius: 60px;
+    margin: 15px 0 15px 0;
+    cursor: pointer;
+    
+
+}
+
+.hitech-btn:hover {
+    color: black;
+    background-color: #00ffea;
+    box-shadow: 0 0 20px #00ffea, 0 0 60px #00ffea;
+    transform: scale(1.1);
+}
+
+
+/* Experience Section */
+
+.jumbtron {
+    background-color: #002244;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.display-4 {
+    color: #eef3f8;
+    text-align: center;
+    padding: 24px;
+}
+
+.lead {
+    font-size:18px;
+    color:#28a745;
+}

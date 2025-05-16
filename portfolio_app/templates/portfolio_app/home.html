@@ -1,0 +1,70 @@
+{% extends "portfolio_app/base.html" %} {% load static %} {% block content1 %}
+<div class="row my-5">
+  <div class="col-12 d-flex justify-content-center align-items-center">
+    {% comment %}
+    <h1 class="text-center">Welcome to My Portfolio</h1>
+    {% endcomment %}
+    <div class="circular-image-container">
+      <img
+        src="{% static 'images/im.jpg' %}"
+        alt="Vicky Mahajan"
+        class="circular-image"
+      />
+    </div>
+  </div>
+
+  <div class="col-12 text-center">
+    <h3 class="title mt-3">Hi, I'm</h3>
+    <section class="name">
+      <h1>Vicky Mahajan</h1>
+      <h4>
+        A Full Stack Developer | Python Developer | AI/ML Enthusiast | Cyber
+        Security Enthusiast
+      </h4>
+    </section>
+  </div>
+
+  <div class="col-12 text-center mt-3">
+    <a
+      href="https://www.linkedin.com/in/vickymahajan-s55/"
+      target="_blank"
+      class="social-icon linkedin mx-2"
+    >
+      <i class="bi bi-linkedin fs-4"></i>
+    </a>
+    <a
+      href=" https://github.com/VickyMahajanGitHub"
+      target="_blank"
+      class="social-icon github mx-2"
+    >
+      <i class="bi bi-github fs-4"></i>
+    </a>
+    <a
+      href="  https://x.com/iVickyMahajan"
+      target="_blank"
+      class="social-icon twitter mx-2"
+      aria-label="Follow Vicky on Twitter"
+    >
+      <i class="bi bi-twitter-x fs-4"></i>
+    </a>
+    <a href="mailto:vickyworks50@gmail.com" class="social-icon gmail mx-2">
+      <i class="bi bi-envelope fs-4"></i>
+    </a>
+
+    <a
+      href="https://www.instagram.com/vickymahajan_s55/"
+      target="_blank"
+      class="social-icon instagram mx-2"
+    >
+      <i class="bi bi-instagram fs-4"></i>
+    </a>
+    {% comment %}
+    <a href="https://www.linkedin.com/in/vickymahajan-s55/" target="_blank">
+      <img src="{% static "images/linkedin.svg" alt="Linkedin" height="100px"
+      width="100px" %}" class="social-icon linkedin mx-2" />
+    </a>
+    {% endcomment %}
+  </div>
+</div>
+
+{% endblock content1 %}

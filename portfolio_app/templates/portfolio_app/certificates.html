@@ -1,0 +1,37 @@
+{% extends "portfolio_app/base.html" %}
+{% load static %}
+
+{% block content1 %}
+<div class="row my-3 p-3">
+    {% for cert in certificates %}
+    <div class="jumbotron jumbotron-fluid mt-2 p-4">
+      
+            <h1 class="display-4">{{ cert.name }}</h1>
+            <h3 class="lead"><strong>Issued by:</strong> {{ cert.issued_by }}</h3>
+            <p><strong>Validation:</strong> {{ cert.validation }}</p>
+            <p>{{ cert.description }}</p>
+          
+        </div>
+   
+    {% endfor %}
+</div>
+{% endblock content1 %}
+
+
+
+{% comment %} {% extends "portfolio_app/base.html" %} {% load static %} {% block content1 %}
+
+
+
+<div class="row my-5 p-5"> 
+    <h1 class="text-center">Certificates</h1>
+
+    {% for eachitem in experience %}
+    <div class="jumbtron jumbtron-fluid mt-2">
+       <h1 class="display-4"> {{ eachitem.company }} </h1>
+       <h3 class="lead"> {{ eachitem.position }} </h3>
+       <p> {{ eachitem.description }} </p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content1 %} {% endcomment %}

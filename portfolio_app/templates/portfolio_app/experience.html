@@ -1,0 +1,15 @@
+{% extends "portfolio_app/base.html" %} {% load static %} {% block content1 %}
+ 
+<div class="row my-5 p-5"> 
+
+    {% for eachitem in experience %}
+    <div class="jumbtron jumbtron-fluid mt-2">
+       <h1 class="display-4"> {{ eachitem.company }} </h1>
+       <h3 class="lead"> {{ eachitem.position }} </h3>
+       <p> {{ eachitem.description }} </p>
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock content1 %}
